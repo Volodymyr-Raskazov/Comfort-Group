@@ -243,16 +243,6 @@ body {
 .main__includes {
   padding: 7.25rem 0 3rem 0;
 }
-@media (max-width: 768px) {
-  .main__includes {
-    padding: 4.5rem 0;
-  }
-}
-@media (max-width: 425px) {
-  .main__includes {
-    padding: 4rem 0 1.87rem 0;
-  }
-}
 .main__benefits {
   padding-bottom: 7.25rem;
 }
@@ -260,80 +250,20 @@ body {
   padding-top: 7.25rem;
   padding-bottom: 3rem;
 }
-@media (max-width: 768px) {
-  .main__package {
-    padding-top: 4.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .main__package {
-    padding-top: 4rem;
-  }
-}
 .main__feedbacks {
   padding: 7.25rem 0;
-}
-@media (max-width: 768px) {
-  .main__feedbacks {
-    padding: 4.5rem 0;
-  }
-}
-@media (max-width: 425px) {
-  .main__feedbacks {
-    padding: 4rem 0;
-  }
 }
 .main__credence {
   padding-top: 7.25rem;
 }
-@media (max-width: 768px) {
-  .main__credence {
-    padding: 4.5rem 0 0 0;
-  }
-}
-@media (max-width: 425px) {
-  .main__credence {
-    padding: 4rem 0 0 0;
-  }
-}
 .main__questions {
   padding: 7.25rem 0;
-}
-@media (max-width: 768px) {
-  .main__questions {
-    padding: 4.5rem 0;
-  }
-}
-@media (max-width: 425px) {
-  .main__questions {
-    padding: 4rem 0;
-  }
 }
 .main__contacts {
   margin-bottom: 7.25rem;
 }
-@media (max-width: 768px) {
-  .main__contacts {
-    margin-bottom: 4.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .main__contacts {
-    margin-bottom: 4rem;
-  }
-}
 .main__order {
   margin-bottom: 10.25rem;
-}
-@media (max-width: 768px) {
-  .main__order {
-    margin-bottom: 4.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .main__order {
-    margin-bottom: 4rem;
-  }
 }
 
 .footer {
@@ -575,7 +505,7 @@ body {
   height: 150%;
   top: -25%;
   position: absolute;
-  background: url(../img/svg/ellipse.svg) no-repeat center;
+  background: url(../img/icons/icons.svg#ellipse) no-repeat center;
   background-size: cover;
 }
 .item-promo__img img {
@@ -730,7 +660,7 @@ body {
   font-family: Montserrat;
 }
 .monthly-subscription__list {
-  list-style: outside url(../img/svg/li-mark.svg);
+  list-style: outside url(../img/icons/icons.svg#li-mark);
   font-size: 1.125rem;
   line-height: 1.563rem;
   padding-left: 1.4rem;
@@ -745,7 +675,7 @@ body {
   line-height: 1.563rem;
   position: relative;
   padding-left: 3.875rem;
-  background-image: url(../img/svg/valentin.svg);
+  background-image: url(../img/icons/icons.svg#valentin);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 50%;
@@ -806,7 +736,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.563rem;
   margin-left: 1.5rem;
-  list-style: outside url(../img/svg/li-mark.svg);
+  list-style: outside url(../img/icons/icons.svg#li-mark);
 }
 .benefits-section__list li:not(:last-child) {
   margin-bottom: 1rem;
@@ -851,7 +781,7 @@ body {
   height: 150%;
   top: -25%;
   position: absolute;
-  background: url(../img/svg/ellipse.svg) no-repeat center;
+  background: url(../img/icons/icons.svg#ellipse) no-repeat center;
   background-size: cover;
 }
 .item-benefits__img img {
@@ -908,7 +838,7 @@ body {
   width: 1.625rem;
   height: 1.625rem;
   flex-shrink: 0;
-  background-image: url(../img/svg/star.svg);
+  background-image: url(../img/icons/icons.svg#star);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1144,7 +1074,7 @@ body {
   margin-bottom: 1rem;
 }
 .item-right__list {
-  list-style: inside url(../img/svg/li-mark.svg);
+  list-style: inside url(../img/icons/icons.svg#li-mark);
   font-size: 1.125rem;
   line-height: 1.563rem;
   margin-bottom: 2rem;
@@ -1656,7 +1586,12 @@ body {
     min-height: 20rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  .includes-section__switch {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 550px) {
   .includes-section__switch {
     font-size: 1rem;
     line-height: 1.375rem;
@@ -2215,7 +2150,7 @@ body {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 715px) {
   .contacts-section__items {
     flex-wrap: wrap;
   }

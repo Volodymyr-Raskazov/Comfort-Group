@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG stack preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-Facebook-dims { width: 40px; height: 40px; }
+ .svg-Instagram-dims { width: 40px; height: 40px; }
+ .svg-MenuBurger-dims { width: 24px; height: 21px; }
+ .svg-MenuClose-dims { width: 28px; height: 28px; }
+ .svg-Messenger-dims { width: 40px; height: 40px; }
+ .svg-SiteLogo-dims { width: 54px; height: 68px; }
+ .svg-WhatsApp-dims { width: 40px; height: 40px; }
+ .svg-detergents-dims { width: 191px; height: 191px; }
+ .svg-discount-dims { width: 300px; height: 250px; }
+ .svg-ellipse-dims { width: 276px; height: 272px; }
+ .svg-ellipse-2-dims { width: 420px; height: 425px; }
+ .svg-li-mark-dims { width: 11px; height: 11px; }
+ .svg-money-dims { width: 135px; height: 135px; }
+ .svg-quality-dims { width: 133px; height: 135px; }
+ .svg-rectangle-dims { width: 708px; height: 655px; }
+ .svg-security-dims { width: 135px; height: 135px; }
+ .svg-star-dims { width: 26px; height: 26px; }
+ .svg-technique-dims { width: 140px; height: 135px; }
+ .svg-valentin-dims { width: 53px; height: 50px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG stack preview</h1>
+            <p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+                <li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.
+-->
+
+            <ul>
+
+             <li title="Facebook">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#Facebook" class="svg-Facebook-dims" alt="Facebook">
+                    </div>
+                    <h2>Facebook, </h2>
+                </li>
+             <li title="Instagram">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#Instagram" class="svg-Instagram-dims" alt="Instagram">
+                    </div>
+                    <h2>Instagram, </h2>
+                </li>
+             <li title="MenuBurger">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#MenuBurger" class="svg-MenuBurger-dims" alt="MenuBurger">
+                    </div>
+                    <h2>MenuBurger, </h2>
+                </li>
+             <li title="MenuClose">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#MenuClose" class="svg-MenuClose-dims" alt="MenuClose">
+                    </div>
+                    <h2>MenuClose, </h2>
+                </li>
+             <li title="Messenger">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#Messenger" class="svg-Messenger-dims" alt="Messenger">
+                    </div>
+                    <h2>Messenger, </h2>
+                </li>
+             <li title="SiteLogo">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#SiteLogo" class="svg-SiteLogo-dims" alt="SiteLogo">
+                    </div>
+                    <h2>SiteLogo, </h2>
+                </li>
+             <li title="WhatsApp">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#WhatsApp" class="svg-WhatsApp-dims" alt="WhatsApp">
+                    </div>
+                    <h2>WhatsApp, </h2>
+                </li>
+             <li title="detergents">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#detergents" class="svg-detergents-dims" alt="detergents">
+                    </div>
+                    <h2>detergents, </h2>
+                </li>
+             <li title="discount">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#discount" class="svg-discount-dims" alt="discount">
+                    </div>
+                    <h2>discount, </h2>
+                </li>
+             <li title="ellipse">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#ellipse" class="svg-ellipse-dims" alt="ellipse">
+                    </div>
+                    <h2>ellipse, </h2>
+                </li>
+             <li title="ellipse-2">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#ellipse-2" class="svg-ellipse-2-dims" alt="ellipse-2">
+                    </div>
+                    <h2>ellipse-2, </h2>
+                </li>
+             <li title="li-mark">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#li-mark" class="svg-li-mark-dims" alt="li-mark">
+                    </div>
+                    <h2>li-mark, </h2>
+                </li>
+             <li title="money">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#money" class="svg-money-dims" alt="money">
+                    </div>
+                    <h2>money, </h2>
+                </li>
+             <li title="quality">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#quality" class="svg-quality-dims" alt="quality">
+                    </div>
+                    <h2>quality, </h2>
+                </li>
+             <li title="rectangle">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#rectangle" class="svg-rectangle-dims" alt="rectangle">
+                    </div>
+                    <h2>rectangle, </h2>
+                </li>
+             <li title="security">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#security" class="svg-security-dims" alt="security">
+                    </div>
+                    <h2>security, </h2>
+                </li>
+             <li title="star">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#star" class="svg-star-dims" alt="star">
+                    </div>
+                    <h2>star, </h2>
+                </li>
+             <li title="technique">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#technique" class="svg-technique-dims" alt="technique">
+                    </div>
+                    <h2>technique, </h2>
+                </li>
+             <li title="valentin">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#valentin" class="svg-valentin-dims" alt="valentin">
+                    </div>
+                    <h2>valentin, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Mon, 04 Sep 2023 12:21:06 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

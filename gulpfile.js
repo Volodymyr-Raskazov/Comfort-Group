@@ -29,13 +29,14 @@ function watcher() {
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
+	gulp.watch(path.watch.svgicons, svgSprive);
 }
 
 export { svgSprive };
 
 const fonts = gulp.series(otf2ttf, ttf2woff);
 
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, svgSprive, gulp.parallel(copy, html, scss, js, images));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
