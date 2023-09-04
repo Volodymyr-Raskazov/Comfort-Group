@@ -1,4 +1,4 @@
-class ItcAccordion {
+export class ItcAccordion {
 	constructor(target, config) {
 		this._el = typeof target === 'string' ? document.querySelector(target) : target;
 		const defaultConfig = {
@@ -78,6 +78,6 @@ class ItcAccordion {
 	}
 }
 
-new ItcAccordion('#accordion', {
-	alwaysOpen: false
-});
+// new ItcAccordion('#accordion', {
+// 	alwaysOpen: false
+// });
