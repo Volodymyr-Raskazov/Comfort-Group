@@ -306,16 +306,43 @@
 						</div>
 					</div>
 
-					<div class="includes-section__switches flex">
-						<button class="includes-section__switch semi-bold _active">
-							<a href="#">Кухня</a>
-						</button>
-						<button class="includes-section__switch semi-bold">
-							<a href="#">Кімнати</a>
-						</button>
-						<button class="includes-section__switch semi-bold">
-							<a href="#">Санвузол</a>
-						</button>
+					<div class="includes-section__slider slider-block">
+						<div class="slider-block__switches flex">
+							<button data-id="kitchen" class="slider-block__switch semi-bold _active">Кухня</button>
+							<button data-id="rooms" class="slider-block__switch semi-bold">Кімнати</button>
+							<button data-id="bathroom" class="slider-block__switch semi-bold">Санвузол</button>
+						</div>
+						<div class="slider-block__slides slide-items">
+							<div data-id="kitchen" class="slide-items__item slide-items__item_kitchen ibg _active">
+								<img src="img/section-includes/kitchen.jpg" alt="kitchen">
+								<div class="slide-items__tooltip tooltip-item tooltip-1 flex">
+									<div class="tooltip-item__label">Миємо підлогу</div>
+									<div class="tooltip-item__icon flex"></div>
+								</div>
+								<div class="slide-items__tooltip tooltip-item tooltip-2 flex">
+									<div class="tooltip-item__label">Протираємо плитку </div>
+									<div class="tooltip-item__icon flex"></div>
+								</div>
+								<div class="slide-items__tooltip tooltip-item tooltip-3 flex">
+									<div class="tooltip-item__label">Миємо раковину та плиту</div>
+									<div class="tooltip-item__icon flex"></div>
+								</div>
+								<div class="slide-items__tooltip tooltip-item tooltip-4 flex">
+									<div class="tooltip-item__label">Миємо техніку</div>
+									<div class="tooltip-item__icon flex"></div>
+								</div>
+								<div class="slide-items__tooltip tooltip-item tooltip-5 flex">
+									<div class="tooltip-item__label">Протираємо підвіконня, батареї, плінтуси, двері та вимикачі!</div>
+									<div class="tooltip-item__icon flex"></div>
+								</div>
+							</div>
+							<div data-id="rooms" class="slide-items__item slide-items__item_rooms ibg">
+								<img src="img/section-includes/rooms.jpg" alt="rooms">
+							</div>
+							<div data-id="bathroom" class="slide-items__item slide-items__item_bathroom ibg">
+								<img src="img/section-includes/bathroom.jpg" alt="bathroom">
+							</div>
+						</div>
 					</div>
 
 				</div>

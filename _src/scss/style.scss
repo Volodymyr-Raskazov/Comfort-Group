@@ -158,13 +158,7 @@ body {
 }
 .main {
 	&__includes {
-		padding: 7.25rem 0 3rem 0;
-		// @media (max-width: 768px) {
-		// 	padding: 4.5rem 0;
-		// }
-		// @media (max-width: 425px) {
-		// 	padding: 4rem 0 1.87rem 0;
-		// }
+		padding: 7.25rem 0;
 	}
 	&__benefits {
 		padding-bottom: 7.25rem;
@@ -172,57 +166,21 @@ body {
 	&__package {
 		padding-top: 7.25rem;
 		padding-bottom: 3rem;
-		// @media (max-width: 768px) {
-		// 	padding-top: 4.5rem;
-		// }
-		// @media (max-width: 425px) {
-		// 	padding-top: 4rem;
-		// }
 	}
 	&__feedbacks {
 		padding: 7.25rem 0;
-		// @media (max-width: 768px) {
-		// 	padding: 4.5rem 0;
-		// }
-		// @media (max-width: 425px) {
-		// 	padding: 4rem 0;
-		// }
 	}
 	&__credence {
 		padding-top: 7.25rem;
-		// @media (max-width: 768px) {
-		// 	padding: 4.5rem 0 0 0;
-		// }
-		// @media (max-width: 425px) {
-		// 	padding: 4rem 0 0 0;
-		// }
 	}
 	&__questions {
 		padding: 7.25rem 0;
-		// @media (max-width: 768px) {
-		// 	padding: 4.5rem 0;
-		// }
-		// @media (max-width: 425px) {
-		// 	padding: 4rem 0;
-		// }
 	}
 	&__contacts {
 		margin-bottom: 7.25rem;
-		// @media (max-width: 768px) {
-		// 	margin-bottom: 4.5rem;
-		// }
-		// @media (max-width: 425px) {
-		// 	margin-bottom: 4rem;
-		// }
 	}
 	&__order {
 		margin-bottom: 10.25rem;
-		// @media (max-width: 768px) {
-		// 	margin-bottom: 4.5rem;
-		// }
-		// @media (max-width: 425px) {
-		// 	margin-bottom: 4rem;
-		// }
 	}
 }
 
@@ -570,39 +528,6 @@ body {
 		border-radius: 1.875rem;
 		padding: 2.5rem;
 	}
-
-	&__switches {
-		padding: 0.37rem;
-		border-radius: 3.125rem;
-		border: 0.125rem solid $colorDarkViolet;
-		gap: 0.37rem;
-	}
-
-	&__switch {
-		flex: 0 1 33.3333%;
-		display: flex;
-		padding: 1rem 5rem;
-		justify-content: center;
-		align-items: center;
-		gap: 0.5rem;
-		border-radius: 3.125rem;
-		font-size: 1.25rem;
-		line-height: 1.688rem;
-		color: $colorBlack;
-		&:hover {
-			color: $colorLightViolet;
-			background-color: $colorDarkViolet;
-		}
-		&._active {
-			background-color: $colorDarkViolet;
-		}
-		&._active a {
-			color: $colorWhite;
-		}
-		a {
-			color: inherit;
-		}
-	}
 }
 
 .item-includes {
@@ -630,6 +555,203 @@ body {
 		color: rgba(27, 27, 27, 0.6);
 		font-size: 1rem;
 		line-height: 1.375rem;
+	}
+}
+
+.includes-section {
+	&__slider {
+	}
+}
+
+.slider-block {
+	&__switches {
+		padding: 0.37rem;
+		border-radius: 3.125rem;
+		border: 0.125rem solid $colorDarkViolet;
+		gap: 0.37rem;
+		margin-bottom: 3.38rem;
+	}
+
+	&__switch {
+		flex: 0 1 33.3333%;
+		display: flex;
+		padding: 1rem 5rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+		border-radius: 3.125rem;
+		font-size: 1.25rem;
+		line-height: 1.688rem;
+		color: $colorBlack;
+		&:hover {
+			color: $colorLightViolet;
+			background-color: $colorDarkViolet;
+		}
+		&._active {
+			color: $colorLightViolet;
+			background-color: $colorDarkViolet;
+		}
+		@media (max-width: 768px) {
+			padding: 1rem 2rem;
+		}
+		@media (max-width: 550px) {
+			font-size: 1rem;
+			line-height: 1.375rem;
+			padding: 1rem 0;
+		}
+	}
+
+	&__slides {
+		border-radius: 1.875rem;
+	}
+}
+
+.slide-items {
+	&__item {
+		padding-bottom: 66.465%;
+		display: none;
+		&._active {
+			display: block;
+		}
+		&_kitchen {
+			& .tooltip-1 {
+				top: 82.61%;
+				left: 28.01%;
+				@media (max-width: 768px) {
+					top: 81.25%;
+					left: 24.35%;
+				}
+				@media (max-width: 425px) {
+					top: 73.19%;
+					left: 12.65%;
+				}
+			}
+			& .tooltip-2 {
+				top: 46.56%;
+				left: 35.2%;
+				@media (max-width: 768px) {
+					top: 43.15%;
+					left: 31.02%;
+				}
+				@media (max-width: 425px) {
+					top: 36.89%;
+					left: 26.3%;
+				}
+			}
+			& .tooltip-3 {
+				flex-direction: column-reverse;
+				top: 53.83%;
+				left: 53.1%;
+				& .tooltip-item__label {
+					&::after {
+						top: -0.38rem;
+						border-top: none;
+						border-bottom: 0.38rem solid $colorWhite;
+					}
+				}
+				@media (max-width: 768px) {
+					top: 53.36%;
+					left: 47.25%;
+				}
+				@media (max-width: 425px) {
+					top: 54.36%;
+					left: 52.25%;
+					max-width: 3.75rem !important;
+				}
+			}
+			& .tooltip-4 {
+				top: 39.3%;
+				left: 70.51%;
+				@media (max-width: 768px) {
+					top: 38.13%;
+					left: 65.5%;
+				}
+				@media (max-width: 425px) {
+					top: 29.13%;
+					left: 54.5%;
+				}
+			}
+			& .tooltip-5 {
+				top: 17.76%;
+				left: 75%;
+				@media (max-width: 768px) {
+					top: 13.52%;
+					left: 64.64%;
+				}
+				@media (max-width: 425px) {
+					top: 2.52%;
+					left: 71.64%;
+				}
+			}
+		}
+
+		&_rooms {
+		}
+
+		&_bathroom {
+		}
+	}
+	&__tooltip {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.88rem;
+		position: absolute;
+		max-width: 14.9375rem;
+		width: fit-content;
+		@media (max-width: 425px) {
+			max-width: 5.8125rem;
+		}
+	}
+}
+
+.tooltip-item {
+	&__label {
+		position: relative;
+		border-radius: 0.3125rem;
+		background: $colorWhite;
+		text-align: center;
+		font-size: 0.8125rem;
+		line-height: 1.125rem;
+		padding: 0.44rem 0.62rem;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			bottom: -0.38rem;
+			left: calc(50% - 0.38rem);
+			border-left: 0.38rem solid transparent;
+			border-right: 0.38rem solid transparent;
+			border-top: 0.38rem solid $colorWhite;
+		}
+		@media (max-width: 425px) {
+			font-size: 0.563rem;
+			line-height: 0.75rem;
+			padding: 0.25rem 0.38rem;
+		}
+	}
+
+	&__icon {
+		justify-content: center;
+		align-items: center;
+		width: 1.25rem;
+		height: 1.25rem;
+		outline: 0.25rem solid rgba(77, 18, 153, 0.3);
+		border-radius: 50%;
+		background-color: $colorDarkViolet;
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			width: 0.65625rem;
+			height: 0.09375rem;
+			background-color: $colorLightViolet;
+			position: absolute;
+			transition: all ease 0.3s;
+		}
+		&::after {
+			transform: rotate(-90deg);
+		}
 	}
 }
 
@@ -1721,7 +1843,7 @@ body {
 			gap: 2rem;
 			margin-bottom: 4.5rem;
 		}
-		@media (max-width: 425px) {
+		@media (max-width: 688px) {
 			flex-wrap: wrap;
 			margin-bottom: 3rem;
 			gap: 1.5rem;
@@ -1734,20 +1856,9 @@ body {
 			border-radius: 1.25rem;
 			padding: 2rem 1.5rem;
 		}
-		@media (max-width: 550px) {
+		@media (max-width: 688px) {
 			flex: 1 1 auto;
 			min-height: 20rem;
-		}
-	}
-
-	&__switch {
-		@media (max-width: 768px) {
-			padding: 1rem 2rem;
-		}
-		@media (max-width: 550px) {
-			font-size: 1rem;
-			line-height: 1.375rem;
-			padding: 1rem 0;
 		}
 	}
 }
