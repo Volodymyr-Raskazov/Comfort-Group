@@ -617,6 +617,7 @@ body {
 }
 
 .slide-items__item {
+  flex: 1 1 auto;
   padding-bottom: 66.465%;
   display: none;
 }
@@ -710,6 +711,226 @@ body {
     left: 71.64%;
   }
 }
+.slide-items__item_rooms .tooltip-1 {
+  top: 51%;
+  left: 17%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-1 {
+    top: 44%;
+    left: 10%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-1 {
+    top: 35%;
+    left: 5%;
+  }
+}
+.slide-items__item_rooms .tooltip-2 {
+  top: 81.5%;
+  left: 29%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-2 {
+    top: 76%;
+    left: 24%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-2 {
+    top: 69%;
+    left: 23%;
+  }
+}
+.slide-items__item_rooms .tooltip-3 {
+  flex-direction: column-reverse;
+  top: 62%;
+  left: 50%;
+}
+.slide-items__item_rooms .tooltip-3 .tooltip-item__label::after {
+  top: -0.38rem;
+  border-top: none;
+  border-bottom: 0.38rem solid #ffffff;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-3 {
+    top: 60%;
+    left: 43%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-3 {
+    top: 60%;
+    left: 45%;
+  }
+}
+.slide-items__item_rooms .tooltip-4 {
+  top: 45%;
+  left: 34.5%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-4 {
+    top: 38%;
+    left: 29.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-4 {
+    top: 23%;
+    left: 28.5%;
+  }
+}
+.slide-items__item_rooms .tooltip-5 {
+  top: 23%;
+  left: 47%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-5 {
+    top: 15.5%;
+    left: 42.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-5 {
+    top: 0.5%;
+    left: 44.5%;
+  }
+}
+.slide-items__item_rooms .tooltip-6 {
+  top: 25%;
+  left: 72%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-6 {
+    top: 17.5%;
+    left: 67.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-6 {
+    top: 0.5%;
+    left: 70%;
+  }
+}
+.slide-items__item_rooms .tooltip-7 {
+  top: 59%;
+  left: 81%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_rooms .tooltip-7 {
+    top: 50.5%;
+    left: 70.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_rooms .tooltip-7 {
+    top: 51.5%;
+    left: 74.5%;
+  }
+}
+.slide-items__item_bathroom .tooltip-1 {
+  top: 83%;
+  left: 9%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-1 {
+    top: 77%;
+    left: 7%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-1 {
+    top: 66%;
+    left: 2%;
+  }
+}
+.slide-items__item_bathroom .tooltip-2 {
+  top: 62.5%;
+  left: 28%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-2 {
+    top: 59%;
+    left: 21%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-2 {
+    top: 46%;
+    left: 25%;
+  }
+}
+.slide-items__item_bathroom .tooltip-3 {
+  flex-direction: column-reverse;
+  top: 72%;
+  left: 50%;
+}
+.slide-items__item_bathroom .tooltip-3 .tooltip-item__label::after {
+  top: -0.38rem;
+  border-top: none;
+  border-bottom: 0.38rem solid #ffffff;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-3 {
+    top: 72%;
+    left: 45%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-3 {
+    top: 72%;
+    left: 45%;
+  }
+}
+.slide-items__item_bathroom .tooltip-4 {
+  top: 22%;
+  left: 32.5%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-4 {
+    top: 16%;
+    left: 27.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-4 {
+    top: 6%;
+    left: 28%;
+  }
+}
+.slide-items__item_bathroom .tooltip-5 {
+  top: 14%;
+  left: 66%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-5 {
+    top: 6.5%;
+    left: 67.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-5 {
+    top: 2.5%;
+    left: 71.5%;
+  }
+}
+.slide-items__item_bathroom .tooltip-6 {
+  top: 62%;
+  left: 81%;
+}
+@media (max-width: 768px) {
+  .slide-items__item_bathroom .tooltip-6 {
+    top: 56.5%;
+    left: 75.5%;
+  }
+}
+@media (max-width: 425px) {
+  .slide-items__item_bathroom .tooltip-6 {
+    top: 54.5%;
+    left: 72%;
+  }
+}
 .slide-items__tooltip {
   flex-direction: column;
   align-items: center;
@@ -764,13 +985,28 @@ body {
 .tooltip-item__icon::before, .tooltip-item__icon::after {
   content: "";
   width: 0.65625rem;
-  height: 0.09375rem;
+  height: 0.125rem;
+  border-radius: 0.0625rem;
   background-color: #f4f4f8;
   position: absolute;
   transition: all ease 0.3s;
 }
+@media (max-width: 425px) {
+  .tooltip-item__icon::before, .tooltip-item__icon::after {
+    width: 0.46875rem;
+    height: 0.0625rem;
+    border-radius: 0.03125rem;
+  }
+}
 .tooltip-item__icon::after {
   transform: rotate(-90deg);
+}
+@media (max-width: 425px) {
+  .tooltip-item__icon {
+    width: 0.80356rem;
+    height: 0.80356rem;
+    outline: 0.22rem solid rgba(77, 18, 153, 0.3);
+  }
 }
 
 .package-section__body {

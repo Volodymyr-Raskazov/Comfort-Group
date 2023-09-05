@@ -608,6 +608,7 @@ body {
 
 .slide-items {
 	&__item {
+		flex: 1 1 auto;
 		padding-bottom: 66.465%;
 		display: none;
 		&._active {
@@ -686,9 +687,182 @@ body {
 		}
 
 		&_rooms {
+			& .tooltip-1 {
+				top: 51%;
+				left: 17%;
+				@media (max-width: 768px) {
+					top: 44%;
+					left: 10%;
+				}
+				@media (max-width: 425px) {
+					top: 35%;
+					left: 5%;
+				}
+			}
+			& .tooltip-2 {
+				top: 81.5%;
+				left: 29%;
+				@media (max-width: 768px) {
+					top: 76%;
+					left: 24%;
+				}
+				@media (max-width: 425px) {
+					top: 69%;
+					left: 23%;
+				}
+			}
+			& .tooltip-3 {
+				flex-direction: column-reverse;
+				top: 62%;
+				left: 50%;
+				& .tooltip-item__label {
+					&::after {
+						top: -0.38rem;
+						border-top: none;
+						border-bottom: 0.38rem solid $colorWhite;
+					}
+				}
+				@media (max-width: 768px) {
+					top: 60%;
+					left: 43%;
+				}
+				@media (max-width: 425px) {
+					top: 60%;
+					left: 45%;
+					// max-width: 3.75rem !important;
+				}
+			}
+			& .tooltip-4 {
+				top: 45%;
+				left: 34.5%;
+				@media (max-width: 768px) {
+					top: 38%;
+					left: 29.5%;
+				}
+				@media (max-width: 425px) {
+					top: 23%;
+					left: 28.5%;
+				}
+			}
+			& .tooltip-5 {
+				top: 23%;
+				left: 47%;
+				@media (max-width: 768px) {
+					top: 15.5%;
+					left: 42.5%;
+				}
+				@media (max-width: 425px) {
+					top: 0.5%;
+					left: 44.5%;
+				}
+			}
+			& .tooltip-6 {
+				top: 25%;
+				left: 72%;
+				@media (max-width: 768px) {
+					top: 17.5%;
+					left: 67.5%;
+				}
+				@media (max-width: 425px) {
+					top: 0.5%;
+					left: 70%;
+				}
+			}
+			& .tooltip-7 {
+				top: 59%;
+				left: 81%;
+				@media (max-width: 768px) {
+					top: 50.5%;
+					left: 70.5%;
+				}
+				@media (max-width: 425px) {
+					top: 51.5%;
+					left: 74.5%;
+				}
+			}
 		}
 
 		&_bathroom {
+			& .tooltip-1 {
+				top: 83%;
+				left: 9%;
+				@media (max-width: 768px) {
+					top: 77%;
+					left: 7%;
+				}
+				@media (max-width: 425px) {
+					top: 66%;
+					left: 2%;
+				}
+			}
+			& .tooltip-2 {
+				top: 62.5%;
+				left: 28%;
+				@media (max-width: 768px) {
+					top: 59%;
+					left: 21%;
+				}
+				@media (max-width: 425px) {
+					top: 46%;
+					left: 25%;
+				}
+			}
+			& .tooltip-3 {
+				flex-direction: column-reverse;
+				top: 72%;
+				left: 50%;
+				& .tooltip-item__label {
+					&::after {
+						top: -0.38rem;
+						border-top: none;
+						border-bottom: 0.38rem solid $colorWhite;
+					}
+				}
+				@media (max-width: 768px) {
+					top: 72%;
+					left: 45%;
+				}
+				@media (max-width: 425px) {
+					top: 72%;
+					left: 45%;
+				}
+			}
+			& .tooltip-4 {
+				top: 22%;
+				left: 32.5%;
+				@media (max-width: 768px) {
+					top: 16%;
+					left: 27.5%;
+				}
+				@media (max-width: 425px) {
+					top: 6%;
+					left: 28%;
+				}
+			}
+			& .tooltip-5 {
+				top: 14%;
+				left: 66%;
+				@media (max-width: 768px) {
+					top: 6.5%;
+					left: 67.5%;
+				}
+				@media (max-width: 425px) {
+					top: 2.5%;
+					left: 71.5%;
+				}
+			}
+			& .tooltip-6 {
+				top: 62%;
+				left: 81%;
+				@media (max-width: 768px) {
+					top: 56.5%;
+					left: 75.5%;
+				}
+				@media (max-width: 425px) {
+					top: 54.5%;
+					left: 72%;
+				}
+			}
 		}
 	}
 	&__tooltip {
@@ -744,13 +918,24 @@ body {
 		&::after {
 			content: "";
 			width: 0.65625rem;
-			height: 0.09375rem;
+			height: 0.125rem;
+			border-radius: 0.0625rem;
 			background-color: $colorLightViolet;
 			position: absolute;
 			transition: all ease 0.3s;
+			@media (max-width: 425px) {
+				width: 0.46875rem;
+				height: 0.0625rem;
+				border-radius: 0.03125rem;
+			}
 		}
 		&::after {
 			transform: rotate(-90deg);
+		}
+		@media (max-width: 425px) {
+			width: 0.80356rem;
+			height: 0.80356rem;
+			outline: 0.22rem solid rgba(77, 18, 153, 0.3);
 		}
 	}
 }
