@@ -1,15 +1,8 @@
 import * as plugFunctions from './modules/functions.js';
 plugFunctions.isWebp();
+plugFunctions.btnMenu();
 
-const menu = document.getElementById('menu');
-const menuBtn = document.getElementById('menu-btn');
-
-menuBtn.addEventListener('click', () => {
-	menu.classList.toggle('_active');
-	menuBtn.classList.toggle('_active');
-});
-
-import { ItcAccordion } from './accordion.js';
-new ItcAccordion('#accordion', {
+import { accordion } from './modules/accordion.js';
+new accordion('#accordion', {
 	alwaysOpen: false
 });

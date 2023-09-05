@@ -10,7 +10,7 @@ import groupCssMediaQueries from 'gulp-group-css-media-queries';
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
-	return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
+	return app.gulp.src(app.path.src.scss, { sourcemaps: true }) //app.isDev
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: 'SCSS',
