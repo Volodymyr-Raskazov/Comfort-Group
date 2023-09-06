@@ -1294,7 +1294,7 @@ body {
 			content: "";
 			position: absolute;
 			background: url(@img/section-credence/sponge.png) no-repeat center;
-			background-size: cover;
+			background-size: contain;
 			width: 8.75rem;
 			height: 8.75rem;
 			right: -4.28rem;
