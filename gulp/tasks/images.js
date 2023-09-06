@@ -5,8 +5,8 @@ export const images = () => {
 	return app.gulp.src(app.path.src.images)
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
-				title: 'IMG',
-				message: 'Error: <%= error.message >'
+				title: "IMG",
+				message: "<%= error.message %>"
 			})))
 		.pipe(app.plugins.newer(app.path.build.images))
 		.pipe(

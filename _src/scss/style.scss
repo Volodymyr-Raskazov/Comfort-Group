@@ -90,6 +90,20 @@ body {
 	}
 }
 
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .footer-title {
 	color: $colorBlack;
 	font-size: 1.25rem;
@@ -614,6 +628,22 @@ body {
 		&._active {
 			display: block;
 		}
+
+		&_kitchen,
+		&_rooms,
+		&_bathroom {
+			& .tooltip-3 {
+				flex-direction: column;
+				& .tooltip-item__label {
+					&::after {
+						top: -0.38rem;
+						border-top: none;
+						border-bottom: 0.38rem solid $colorWhite;
+					}
+				}
+			}
+		}
+
 		&_kitchen {
 			& .tooltip-1 {
 				top: 82.61%;
@@ -640,16 +670,8 @@ body {
 				}
 			}
 			& .tooltip-3 {
-				flex-direction: column-reverse;
 				top: 53.83%;
 				left: 53.1%;
-				& .tooltip-item__label {
-					&::after {
-						top: -0.38rem;
-						border-top: none;
-						border-bottom: 0.38rem solid $colorWhite;
-					}
-				}
 				@media (max-width: 768px) {
 					top: 53.36%;
 					left: 47.25%;
@@ -712,16 +734,8 @@ body {
 				}
 			}
 			& .tooltip-3 {
-				flex-direction: column-reverse;
 				top: 62%;
 				left: 50%;
-				& .tooltip-item__label {
-					&::after {
-						top: -0.38rem;
-						border-top: none;
-						border-bottom: 0.38rem solid $colorWhite;
-					}
-				}
 				@media (max-width: 768px) {
 					top: 60%;
 					left: 43%;
@@ -729,7 +743,6 @@ body {
 				@media (max-width: 425px) {
 					top: 60%;
 					left: 45%;
-					// max-width: 3.75rem !important;
 				}
 			}
 			& .tooltip-4 {
@@ -808,16 +821,8 @@ body {
 				}
 			}
 			& .tooltip-3 {
-				flex-direction: column-reverse;
 				top: 72%;
 				left: 50%;
-				& .tooltip-item__label {
-					&::after {
-						top: -0.38rem;
-						border-top: none;
-						border-bottom: 0.38rem solid $colorWhite;
-					}
-				}
 				@media (max-width: 768px) {
 					top: 72%;
 					left: 45%;
@@ -866,7 +871,7 @@ body {
 		}
 	}
 	&__tooltip {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		gap: 0.88rem;
 		position: absolute;
@@ -887,6 +892,8 @@ body {
 		font-size: 0.8125rem;
 		line-height: 1.125rem;
 		padding: 0.44rem 0.62rem;
+		opacity: 0;
+		transition: opacity ease-in-out 0.5s;
 		&::after {
 			content: "";
 			position: absolute;
@@ -917,7 +924,6 @@ body {
 		&::before,
 		&::after {
 			content: "";
-			width: 0.65625rem;
 			height: 0.125rem;
 			border-radius: 0.0625rem;
 			background-color: $colorLightViolet;
@@ -929,8 +935,28 @@ body {
 				border-radius: 0.03125rem;
 			}
 		}
+		&:hover {
+			~ .tooltip-item__label {
+				opacity: 1;
+			}
+			&::before {
+				width: 0.65625rem;
+				@media (max-width: 425px) {
+					width: 0.46875rem;
+				}
+			}
+			&::after {
+				transform: rotate(-90deg);
+			}
+		}
+		&::before {
+			width: 0;
+		}
 		&::after {
-			transform: rotate(-90deg);
+			width: 0.65625rem;
+			@media (max-width: 425px) {
+				width: 0.46875rem;
+			}
 		}
 		@media (max-width: 425px) {
 			width: 0.80356rem;

@@ -1,4 +1,4 @@
-export class accordion {
+class accordion {
 	constructor(target, config) {
 		this._el = typeof target === 'string' ? document.querySelector(target) : target;
 		const defaultConfig = {
@@ -75,7 +75,3 @@ export class accordion {
 		el.classList.contains('accordion-items__item_show') ? this.hide(el) : this.show(el);
 	}
 }
-
-// new ItcAccordion('#accordion', {
-// 	alwaysOpen: false
-// });

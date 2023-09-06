@@ -6,8 +6,8 @@ export const zip = () => {
 	return app.gulp.src(`${app.path.buildFolder}/**/*.*`, {})
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
-				title: 'ZIP',
-				message: 'Error: <%= error.message >'
+				title: "ZIP",
+				message: "<%= error.message %>"
 			}))
 		)
 		.pipe(zipPlugin(`${app.path.rootFolder}.zip`))
