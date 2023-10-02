@@ -6,8 +6,8 @@ export const otf2ttf = () => {
 	return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
-				title: "FONTS",
-				message: "<%= error.message %>"
+				title: 'FONTS',
+				message: 'Error: <%= error.message %>'
 			})))
 		.pipe(fonter({
 			formats: ['ttf']
@@ -20,7 +20,7 @@ export const ttf2woff = () => {
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: 'FONTS',
-				message: 'Error: <%= error.message >'
+				message: 'Error: <%= error.message %>'
 			})))
 		.pipe(fonter({
 			formats: ['woff']

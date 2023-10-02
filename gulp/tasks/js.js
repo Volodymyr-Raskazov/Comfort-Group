@@ -4,16 +4,15 @@ export const js = () => {
 	return app.gulp.src(app.path.src.js, { sourcemaps: app.isDev })
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
-				title: "JS",
-				message: "<%= error.message %>"
+				title: 'JS',
+				message: 'Error: <%= error.message %>'
 			})))
-		// .pipe(webpack({
-		// 	mode: app.isBuild ? 'production' : 'development',
-		// devtool: app.isBuild ? 'cheap-eval-source-map' : 'cheap-source-map',
-		// 	output: {
-		// 		filename: 'app.min.js',
-		// 	}
-		// }))
+		.pipe(webpack({
+			mode: app.isBuild ? 'production' : 'development',
+			output: {
+				filename: 'app.min.js',
+			}
+		}))
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(app.plugins.browsersync.stream())
 }

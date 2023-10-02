@@ -4,13 +4,13 @@ export const svgSprive = () => {
 	return app.gulp.src(`${app.path.src.svgicons}`, {})
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
-				title: "SVG",
-				message: "<%= error.message %>"
+				title: 'SVG',
+				message: 'Error: <%= error.message %>'
 			})))
 		.pipe(svgSprite({
 			mode: {
 				stack: {
-					sprite: '../icons/icons.svg',
+					sprite: `../icons/icons.svg`,
 					example: true,
 				}
 			},
